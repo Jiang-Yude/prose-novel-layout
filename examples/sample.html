@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>喜歡煮麻辣火鍋的媽媽，跟一吃辣就拉肚子的孩子 ｜ 母親節 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #FBF6F0;
+    --paper:     #FFFCF7;
+    --petal:     #F5DCDC;
+    --petal-soft:#FAEAEA;
+    --petal-warm:#F4E1D8;
+    --rose:      #C28A85;
+    --rose-deep: #9E5F5A;
+    --leaf:      #B8C2A8;
+    --ink:       #3D332E;
+    --ink-soft:  #7A6B62;
+    --rule:      #E8D9D2;
+    --gold:      #C9A66B;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Serif TC', 'Songti TC', 'PingFang TC', serif;
+    color: var(--ink);
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse at 10% 0%, rgba(245, 220, 220, 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 100%, rgba(184, 194, 168, 0.15) 0%, transparent 60%);
+    line-height: 1.95;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    text-align: center;
+    padding: 100px 28px 80px;
+    position: relative;
+  }
+
+  .hero-flower { width: 88px; height: 88px; margin: 0 auto 32px; display: block; }
+
+  .hero-meta {
+    font-size: 14px;
+    letter-spacing: 0.4em;
+    color: var(--rose);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--rose-deep);
+    letter-spacing: 0.06em;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+
+  .hero h1 .line {
+    display: block;
+  }
+
+  .hero h1 .line + .line {
+    margin-top: 8px;
+  }
+
+  .hero h1 .connector {
+    font-size: 0.65em;
+    color: var(--rose);
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    margin: 8px 0;
+  }
+
+  .hero-sub {
+    font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink-soft);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+  }
+
+  .hero-divider {
+    width: 50px;
+    height: 1px;
+    background: var(--rose);
+    opacity: 0.5;
+    margin: 40px auto 0;
+  }
+
+  /* ============ SCENE BLOCK ============ */
+  .scene {
+    padding: 36px 0;
+  }
+
+  .scene p {
+    font-size: 19px;
+    line-height: 2.05;
+    margin-bottom: 1.4em;
+    color: var(--ink);
+    text-align: justify;
+    text-wrap: pretty;
+  }
+
+  .scene p:last-child { margin-bottom: 0; }
+
+  /* ============ ORNAMENT DIVIDER ============ */
+  .ornament {
+    text-align: center;
+    margin: 48px 0;
+    color: var(--rose);
+    opacity: 0.5;
+    letter-spacing: 0.6em;
+    font-size: 14px;
+  }
+
+  .ornament-flower {
+    text-align: center;
+    margin: 56px auto;
+    width: 36px;
+    opacity: 0.6;
+  }
+
+  /* ============ DIALOGUE BUBBLE ============ */
+  .dialogue {
+    margin: 36px 0;
+    max-width: 580px;
+  }
+
+  .dialogue.right { margin-left: auto; }
+  .dialogue.left { margin-right: auto; }
+
+  .speaker {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--rose-deep);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .dialogue.right .speaker { text-align: right; }
+
+  .bubble {
+    background: var(--paper);
+    border: 1px solid var(--petal);
+    padding: 24px 28px;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 1.95;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(194, 138, 133, 0.08);
+  }
+
+  .bubble.child {
+    background: linear-gradient(135deg, var(--paper) 0%, #FBF1EE 100%);
+    border-color: var(--petal-warm);
+  }
+
+  .bubble.mom {
+    background: linear-gradient(135deg, var(--petal-soft) 0%, var(--paper) 100%);
+    border-color: var(--petal);
+  }
+
+  /* 對話框小尾巴 */
+  .bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background: inherit;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: inherit;
+  }
+  .dialogue.left .bubble::after { left: 32px; border-color: var(--petal-warm); background: #FBF1EE; }
+  .dialogue.right .bubble::after { right: 32px; border-color: var(--petal); background: var(--petal-soft); }
+
+  /* ============ PULL QUOTE ============ */
+  .pullquote {
+    text-align: center;
+    margin: 64px auto;
+    padding: 0 24px;
+    max-width: 640px;
+    position: relative;
+  }
+
+  .pullquote::before, .pullquote::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--rose);
+    margin: 0 auto;
+    opacity: 0.4;
+  }
+  .pullquote::before { margin-bottom: 28px; }
+  .pullquote::after  { margin-top: 28px; }
+
+  .pullquote .quote-text {
+    font-size: 28px;
+    line-height: 1.7;
+    color: var(--rose-deep);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+
+  .pullquote .quote-text em {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--rose);
+  }
+
+  /* ============ CALLOUT ============ */
+  .callout {
+    text-align: center;
+    margin: 48px 0;
+    font-size: 24px;
+    line-height: 1.7;
+    color: var(--rose-deep);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
+  /* ============ CONTRAST GRID（兩欄對比）============ */
+  .contrast {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 32px;
+    align-items: start;
+    margin: 56px 0;
+  }
+
+  .contrast-col {
+    text-align: center;
+  }
+
+  .contrast-col h3 {
+    font-size: 18px;
+    color: var(--rose-deep);
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 0.15em;
+  }
+
+  .contrast-col p {
+    font-size: 17px;
+    line-height: 1.95;
+    color: var(--ink);
+    text-align: center !important;
+  }
+
+  .contrast-divider {
+    width: 1px;
+    background: var(--rule);
+  }
+
+  /* ============ LETTER SECTION ============ */
+  .letter-section {
+    margin: 80px 0 60px;
+    padding: 56px 48px 48px;
+    background: var(--paper);
+    border: 1px solid var(--petal);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(194, 138, 133, 0.06), 0 16px 48px rgba(194, 138, 133, 0.08);
+    position: relative;
+  }
+
+  .letter-section::before {
+    content: '致媽媽';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg);
+    color: var(--rose-deep);
+    font-size: 13px;
+    letter-spacing: 0.4em;
+    padding: 0 16px;
+    font-weight: 500;
+  }
+
+  .letter-section::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    border: 1px solid var(--petal-soft);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  .letter-section p {
+    font-size: 18px;
+    line-height: 2.05;
+    margin-bottom: 1.4em;
+    text-align: justify;
+    text-wrap: pretty;
+    color: var(--ink);
+    position: relative;
+    z-index: 1;
+  }
+
+  .letter-section p:last-child { margin-bottom: 0; }
+
+  /* 信件中的金句 */
+  .letter-keyline {
+    text-align: center !important;
+    font-size: 22px !important;
+    color: var(--rose-deep) !important;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin: 24px 0 !important;
+    line-height: 1.7 !important;
+  }
+
+  /* ============ FINALE ============ */
+  .finale {
+    text-align: center;
+    padding: 120px 28px 80px;
+    position: relative;
+  }
+
+  .finale-flower {
+    width: 56px;
+    margin: 0 auto 56px;
+    display: block;
+    opacity: 0.85;
+  }
+
+  .finale .closing-line {
+    font-size: 38px;
+    line-height: 1.7;
+    color: var(--rose-deep);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  .finale .closing-line .second {
+    display: block;
+    margin-top: 1.6em;
+  }
+
+  /* ============ SECTION HEADING（隱形錨點） ============ */
+  .scene-label {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    color: var(--rose);
+    opacity: 0.6;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  /* ============ Mobile ============ */
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 64px 20px 56px; }
+    .hero h1 { font-size: 30px; letter-spacing: 0.04em; line-height: 1.5; }
+    .hero h1 .line + .line { margin-top: 6px; }
+    .hero-sub { font-size: 16px; }
+    .hero-flower { width: 72px; height: 72px; }
+    .scene { padding: 28px 0; }
+    .scene p { font-size: 17px; line-height: 2; }
+    .dialogue { margin: 28px 0; max-width: 100%; }
+    .bubble { padding: 20px 22px; font-size: 16px; }
+    .pullquote { margin: 48px auto; }
+    .pullquote .quote-text { font-size: 22px; }
+    .callout { font-size: 20px; }
+    .contrast {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .contrast-divider {
+      width: 40px;
+      height: 1px;
+      margin: 0 auto;
+      background: var(--rule);
+    }
+    .contrast-col h3 { font-size: 16px; }
+    .contrast-col p { font-size: 16px; }
+    .letter-section { padding: 44px 28px 32px; margin: 56px -8px 48px; }
+    .letter-section::after { top: 16px; left: 16px; right: 16px; bottom: 16px; }
+    .letter-section p { font-size: 16px; }
+    .letter-keyline { font-size: 18px !important; }
+    .finale { padding: 80px 20px 60px; }
+    .finale .closing-line { font-size: 26px; line-height: 1.85; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <svg class="hero-flower" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+    <path d="M48 70 Q36 62 32 50" stroke="#B8C2A8" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <ellipse cx="32" cy="56" rx="9" ry="3.5" fill="#B8C2A8" opacity="0.6" transform="rotate(-30 32 56)"/>
+    <ellipse cx="56" cy="62" rx="7" ry="3" fill="#B8C2A8" opacity="0.5" transform="rotate(35 56 62)"/>
+    <g opacity="0.9">
+      <path d="M48 18 Q32 24 32 36 Q32 44 48 44 Q64 44 64 36 Q64 24 48 18 Z" fill="#F5DCDC"/>
+      <path d="M48 22 Q36 28 36 36 Q36 42 48 42 Q60 42 60 36 Q60 28 48 22 Z" fill="#F0CECE"/>
+      <path d="M48 26 Q40 30 40 36 Q40 40 48 40 Q56 40 56 36 Q56 30 48 26 Z" fill="#E8B8B8"/>
+      <path d="M32 30 L34 28 L36 30 L38 27 L40 30 L42 26 L44 30 L46 26 L48 30 L50 26 L52 30 L54 27 L56 30 L58 28 L60 30 L62 28"
+            stroke="#E8B8B8" stroke-width="1" fill="none" opacity="0.7"/>
+    </g>
+    <circle cx="48" cy="34" r="2.5" fill="#C28A85"/>
+    <path d="M48 44 L48 84" stroke="#B8C2A8" stroke-width="2"/>
+  </svg>
+  <div class="hero-meta">母親節 ・ 2026</div>
+  <h1>
+    <span class="line">喜歡煮麻辣火鍋的媽媽</span>
+    <span class="line connector">跟</span>
+    <span class="line">一吃辣就拉肚子的孩子</span>
+  </h1>
+  <div class="hero-sub">這是假的故事，但裡面的感受，都是真的</div>
+  <div class="hero-divider"></div>
+</section>
+
+<div class="container">
+
+  <!-- ====== 設定：媽媽愛辣 ====== -->
+  <section class="scene">
+    <p>大家可以想像有一個媽媽，她人挺好的，就是愛煮辣。</p>
+    <p>而且這個媽媽其實一輩子只會煮這一種口味。別的口味放到她舌頭上，她真的嚐不出味道。鹽放再多她也覺得淡，清燉的湯她喝一口就皺眉：</p>
+  </section>
+
+  <div class="dialogue left">
+    <div class="speaker">媽媽</div>
+    <div class="bubble mom">這沒味道啊，加點辣吧。</div>
+  </div>
+
+  <section class="scene">
+    <p>對她來說，「料理」跟「辣」幾乎是同一件事，一道菜不辣，她就不知道那叫什麼了。</p>
+    <p>還有她的孩子，孩子也算蠻聽話的，但他就是腸胃很脆弱，只要吃到一點點辣，就會拉肚子。</p>
+  </section>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 吵架：兩個人的話 ====== -->
+  <section class="scene">
+    <p>所以從小這個孩子，就一直跟媽媽吵架，常常為了煮辣這件事大吵特吵。</p>
+  </section>
+
+  <div class="dialogue left">
+    <div class="speaker">孩 子</div>
+    <div class="bubble child">
+      你少吃一點麻辣鍋啦！你天天這樣吃，你會食道癌的！<br><br>
+      我吃一口就拉肚子，你還繼續煮，我們家是麻辣鍋店嗎？
+    </div>
+  </div>
+
+  <div class="dialogue right">
+    <div class="speaker">媽媽心裡想</div>
+    <div class="bubble mom">
+      我每天工作壓力那麼大，煮個自己愛吃的口味難道不行嗎？你應該要像個孩子啊，你怎麼可以這樣不聽話、這麼挑食、還咒你媽會得癌症呢？
+    </div>
+  </div>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 孩子明白了 ====== -->
+  <section class="scene">
+    <p>直到有一天孩子明白了。每個人都有每個人的人生，每個人都有自己的選擇。是啊，這個媽媽的壓力就是這麼大。外面工作受了氣，回家還要顧一家大小，壓力大就想吃點刺激的東西，辣是她少數能讓自己感覺「還活著」的事情。</p>
+    <p>所以要她不煮辣很簡單，就是幫她解除壓力。那我有辦法幫她解除壓力嗎？有辦法管那麼多嗎？好像也沒辦法。</p>
+    <p>所以這個孩子後來選擇：OK，我尊重媽媽愛煮辣。我尊重你的選擇，你有你的人生，你有你的路，你有你的壓力，你有你的排解方式，我懂了，我尊重。</p>
+  </section>
+
+  <div class="callout">但這個孩子吃到辣<br>就會拉肚子。</div>
+
+  <section class="scene">
+    <p>所以他長大之後就搬去外面住了。他只是不想每天吃飯都在跑廁所而已。</p>
+  </section>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 場景一：回家 ====== -->
+  <section class="scene">
+    <div class="scene-label">場 景 一</div>
+    <p>那當然，在外面住久了，有時候還是會想回家看一看媽媽好不好。所以他就回去看看媽媽，媽媽看到他當然很開心，很久不見，馬上系上圍裙就要去廚房：</p>
+  </section>
+
+  <div class="dialogue left">
+    <div class="speaker">媽媽</div>
+    <div class="bubble mom">沒關係沒關係，媽媽煮給你吃。</div>
+  </div>
+
+  <section class="scene">
+    <p>端上桌的是滿滿一桌——麻辣鍋、辣炒高麗菜、麻婆豆腐，就連蛋花湯都飄著一層紅油。</p>
+    <p>他不忍心拒絕，他怕媽媽傷心，所以他硬著頭皮夾了幾口。然後半小時後，他就在廁所裡了。</p>
+  </section>
+
+  <div class="dialogue right">
+    <div class="speaker">媽媽生氣</div>
+    <div class="bubble mom">
+      你一回家就甩臉色給我看。我特地為你煮的，你進廁所進了半小時是什麼意思？
+    </div>
+  </div>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 場景二：宵夜 ====== -->
+  <section class="scene">
+    <div class="scene-label">場 景 二</div>
+    <p>又或者，有的時候媽媽聽說孩子最近期末熬夜讀書，擔心孩子餓，就半夜開車過來，興高采烈地拎著一個保溫鍋要送到孩子宿舍樓下。</p>
+    <p>媽媽在樓下等著，看到孩子瘦了還眼睛紅紅的，當然就把整鍋遞過去：「快趁熱吃，媽媽剛煮的。」孩子打開蓋子，撲面而來的是一股麻辣香，紅油漂著花椒，是媽媽最拿手的麻辣臭豆腐。</p>
+  </section>
+
+  <div class="dialogue left">
+    <div class="speaker">孩子小聲</div>
+    <div class="bubble child">媽，可以下次煮不辣的嗎？我吃了會拉肚子。</div>
+  </div>
+
+  <div class="dialogue right">
+    <div class="speaker">媽媽崩潰</div>
+    <div class="bubble mom">
+      我特別煮宵夜給你，我擔心你累，我擔心你瘦，我擔心你在熬夜讀書沒體力。我大半夜開車過來，你下來就是這個樣子，一副嫌棄、煩我、不領情的臉。<br><br>
+      你怎麼可以這麼不孝呢？媽媽煮的你都吃不下，你是覺得媽媽煮的不好吃嗎？
+    </div>
+  </div>
+
+  <div class="dialogue left">
+    <div class="speaker">孩子委屈</div>
+    <div class="bubble child">
+      我有跟你說謝謝你啊，我就是吃辣會拉嘛，你煮不辣的我就會吃光啦。
+    </div>
+  </div>
+
+  <div class="callout">就這樣，<br>又不歡而散了。</div>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 兩個都沒錯（對比）====== -->
+  <section class="scene">
+    <div class="contrast">
+      <div class="contrast-col">
+        <h3>孩 子 有 錯 嗎</h3>
+        <p>沒錯啊。<br>吃辣會拉肚子，<br>不是他故意的。</p>
+      </div>
+      <div class="contrast-divider"></div>
+      <div class="contrast-col">
+        <h3>媽 媽 有 錯 嗎</h3>
+        <p>也沒錯啊。<br>壓力大，<br>煮個自己愛吃的菜嘛。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pullquote">
+    <div class="quote-text">兩個人，都沒錯。</div>
+  </div>
+
+  <!-- ====== 媽媽的童年 ====== -->
+  <section class="scene">
+    <p>而且這個媽媽其實心裡頭也很委屈。她從小就是這樣長大的——</p>
+    <p>她的媽媽從不下廚，放學回家沒飯吃是常態，問餓不餓會被嗆「我又不是你的傭人」，生病了沒人煮粥，連白開水都要自己倒。她那個媽媽，連「你今天吃了嗎」這句話，一輩子都沒問過她。</p>
+  </section>
+
+  <div class="callout" style="font-size: 20px; color: var(--ink-soft); font-style: italic;">
+    所以這個媽媽從小就立誓——
+  </div>
+
+  <div class="dialogue right" style="margin-top: 0;">
+    <div class="speaker">媽媽的誓言</div>
+    <div class="bubble mom">
+      我絕對不會這樣對我的小孩。<br>
+      我以後一定要每天親手煮飯給孩子吃，<br>
+      我一定要記得問孩子餓不餓，<br>
+      我一定要在孩子熬夜的時候煮宵夜送過去，<br>
+      我要把愛全部都放進飯菜裡。
+    </div>
+  </div>
+
+  <section class="scene">
+    <p>這個媽媽真的都做到了。她每天五點就下班衝去市場，六點半飯一定上桌，孩子半夜讀書她一定不睡，她真的把那份冷漠留在自己這一代，沒有再傳下去。</p>
+  </section>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 媽媽的失望 ====== -->
+  <section class="scene">
+    <p>她以為，孩子一定會超黏她、超愛她。</p>
+    <p>她每天親手煮、每次都記得孩子愛吃什麼、半夜還大老遠送宵夜，孩子應該會以她為驕傲吧？應該會跟同學炫耀「我媽煮飯超好吃」吧？</p>
+  </section>
+
+  <div class="pullquote">
+    <div class="quote-text">但沒想到，<br>換來的是<br>孩子吃兩口就跑廁所的臉。</div>
+  </div>
+
+  <section class="scene">
+    <p>這媽媽超憤怒的，覺得孩子超不孝，覺得自己一輩子的努力都被否定了。</p>
+  </section>
+
+  <div class="ornament">・ ・ ・</div>
+
+  <!-- ====== 孩子的天賦 ====== -->
+  <section class="scene">
+    <p>但她其實不知道，孩子其實並沒有討厭她。聽完媽媽的故事，孩子心裡是非常感謝的。</p>
+    <p>這個孩子的腸胃，對辣就是這麼敏感。連帶地，他的味蕾也比一般人敏感，他能吃出一道菜裡的醬油是哪一家，他曾經懷疑自己是不是有問題，腸胃太弱、太挑、太麻煩。</p>
+    <p>直到有一天，他發現這就是他的天賦。</p>
+  </section>
+
+  <div class="callout">他對食材的純淨度、層次、火候，<br>有著超越常人的感受力——<br><span style="color: var(--rose); font-weight: 600;">他其實是一個很厲害的美食品味師。</span></div>
+
+  <section class="scene">
+    <p>所以當媽媽跟他說「你腸胃那麼弱，你是故意的」、「你就是挑食」、「你就是不領情」，他其實是覺得非常難過。除了生理上的不適，心理上也備受打擊。</p>
+    <p style="font-style: italic; color: var(--ink-soft);">「這明明就是我的天賦啊，為什麼要被你說成是我有毛病、我有問題、我很不孝？我花了好多時間才終於找到我的天賦，為什麼你要否定它？」</p>
+    <p>當然他後來也明白了，媽媽會說那些話，只是因為看到他這個反應很傷心而已。她並沒有真的要否定他的天賦。她都能夠理解。</p>
+  </section>
+
+  <!-- ====== 致媽媽的信 ====== -->
+  <div class="letter-section">
+    <p>媽媽，謝謝你生下我，謝謝你把我養大。也謝謝你天天親手煮飯給我吃，記得我每次回家、記得我考試會餓、記得在我熬夜的時候開車來送宵夜。</p>
+
+    <p>你比你媽好太多了，你很努力讓那份冷漠留在你這裡，沒有再帶給下一代——光憑這一點，我就佩服你，也肯定你。</p>
+
+    <p>但我吃到辣就是會拉，這不是我故意的，這就是我天生的腸胃，甚至這還是我的天賦。我不期待你可以理解這是天賦，我只希望你能明白，<strong style="color: var(--rose-deep); font-weight: 500;">我吃辣會拉，我也不是故意的</strong>。</p>
+
+    <p>其實到後來，我連『希望你理解』都放下了。我不期待你能理解我的感受，不期待你吃辣覺得很爽、很過癮，也不期待你理解我會不舒服。</p>
+
+    <p class="letter-keyline">我只是希望你能放過自己。</p>
+
+    <p>我已經放過自己了，我對你沒有任何的期待了。我也沒有失望。我明白我們是不同的個體，有不同的思維、習慣、環境、天賦、選擇，有不同的人生。</p>
+
+    <p>不要因為孩子吃兩口就跑廁所，你就覺得失望。不要因為孩子婉拒你的麻辣臭豆腐，你就自卑。這只是我的人生而已，這是孩子的反應。</p>
+
+    <p>你愛煮辣你沒錯，你每天親手煮飯，你很棒。我吃到辣就拉肚子，那是我自己的腸胃。你想吃辣，你可以繼續吃辣，你不要強迫孩子也吃辣就好了。你也不要因為孩子吃不了辣，就覺得自己有多糟、覺得自己不被愛。</p>
+  </div>
+
+</div>
+
+<!-- ====== 結尾（畫框外）====== -->
+<section class="finale">
+  <svg class="finale-flower" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.9">
+      <path d="M32 14 Q22 18 22 26 Q22 32 32 32 Q42 32 42 26 Q42 18 32 14 Z" fill="#F5DCDC"/>
+      <path d="M32 16 Q24 20 24 26 Q24 30 32 30 Q40 30 40 26 Q40 20 32 16 Z" fill="#F0CECE"/>
+      <path d="M32 18 Q26 22 26 26 Q26 28 32 28 Q38 28 38 26 Q38 22 32 18 Z" fill="#E8B8B8"/>
+    </g>
+    <circle cx="32" cy="25" r="2" fill="#C28A85"/>
+    <path d="M32 32 L32 56" stroke="#B8C2A8" stroke-width="1.5"/>
+  </svg>
+  <p class="closing-line">
+    沒事，是辣的錯，
+    <span class="second">我們，都沒有錯。</span>
+  </p>
+</section>
+
+</body>
+</html>
