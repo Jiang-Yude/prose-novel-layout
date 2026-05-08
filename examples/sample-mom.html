@@ -666,5 +666,61 @@
   </p>
 </section>
 
+<!-- ====== 免責聲明 ====== -->
+<section class="disclaimer">
+  <div class="disclaimer-inner">
+    <h3>關於這封信</h3>
+    <p>這封信是用 <a href="https://github.com/Jiang-Yude/prose-novel-layout" target="_blank">prose-novel-layout</a> 的「課題分離信件模式」寫的。</p>
+    <p><strong>這不是心理諮商工具</strong>，只是一個幫人把感受寫得更清楚的輔助。如果你也有類似的糾結，這個工具可以陪你走一遍——但真的有強烈心結，請找專業心理師。</p>
+    <p>信寫了不一定要寄。對方接不接受，是對方的課題；自己有沒有想清楚，是自己的課題。</p>
+    <p class="disclaimer-resource">需要專業協助：<a href="https://www.tsh.org.tw/" target="_blank">台灣自殺防治學會</a> ・ 張老師專線 1980 ・ 安心專線 1925</p>
+  </div>
+</section>
+
+<style>
+.disclaimer {
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  padding: 60px 28px 80px;
+  margin-top: 60px;
+}
+.disclaimer-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.disclaimer h3 {
+  font-size: 14px;
+  letter-spacing: 0.4em;
+  color: var(--rose-deep);
+  margin-bottom: 28px;
+  text-align: center;
+  font-weight: 500;
+}
+.disclaimer p {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--ink-soft);
+  margin-bottom: 1em;
+}
+.disclaimer p:last-child { margin-bottom: 0; }
+.disclaimer a {
+  color: var(--rose-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.disclaimer .disclaimer-resource {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 24px;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+@media (max-width: 640px) {
+  .disclaimer { padding: 40px 20px 60px; }
+  .disclaimer p { font-size: 14px; }
+  .disclaimer .disclaimer-resource { font-size: 12px; }
+}
+</style>
+
 </body>
 </html>

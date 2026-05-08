@@ -7,36 +7,38 @@
 <title>菸味的比喻 ｜ 想對爸爸說</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* 暖橘金黃主題：父親感、溫暖、有歷史感 */
-    --bg:        #F8F1E5;
-    --paper:     #FFFAF0;
-    --petal:     #F4D8C4;
-    --petal-soft:#FAEAD8;
-    --petal-warm:#F2DBC0;
-    --rose:      #C9876A;
-    --rose-deep: #9E5F4A;
-    --leaf:      #A89968;
-    --ink:       #3A2E26;
-    --ink-soft:  #6F5C50;
-    --rule:      #E5D2BE;
+    /* 大地色低飽和：父親感、沉穩、土地味 */
+    --bg:        #ECE3D0;          /* 暖米底 (低飽和大地色) */
+    --paper:     #F4ECD9;          /* 紙白米 */
+    --petal:     #D9C7A6;          /* 淡卡其 */
+    --petal-soft:#E5D9BE;          /* 沙土 */
+    --petal-warm:#DBC9A2;          /* 暖卡其 */
+    --rose:      #8B6F47;          /* 主咖啡（accent） */
+    --rose-deep: #5E4A30;          /* 深咖啡（標題） */
+    --leaf:      #5C7560;          /* 墨綠 */
+    --ink:       #3A2E2A;          /* 墨棕（主文字） */
+    --ink-soft:  #6B5C50;          /* 軟墨棕 */
+    --rule:      #D0BD98;          /* 分隔線 */
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Noto Serif TC', 'Songti TC', 'PingFang TC', serif;
+    font-family: 'Noto Sans TC', 'Zen Maru Gothic', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    font-weight: 500;
     color: var(--ink);
     background: var(--bg);
     background-image:
-      radial-gradient(ellipse at 10% 0%, rgba(244, 216, 196, 0.45) 0%, transparent 50%),
-      radial-gradient(ellipse at 90% 100%, rgba(168, 153, 104, 0.12) 0%, transparent 60%);
+      radial-gradient(ellipse at 10% 0%, rgba(217, 199, 166, 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 100%, rgba(92, 117, 96, 0.1) 0%, transparent 60%);
     line-height: 1.95;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    letter-spacing: 0.02em;
   }
 
   .container { max-width: 720px; margin: 0 auto; padding: 0 28px; }
@@ -49,19 +51,21 @@
     text-transform: uppercase; margin-bottom: 24px; font-weight: 500;
   }
   .hero h1 {
-    font-size: 42px; font-weight: 600; color: var(--rose-deep);
-    letter-spacing: 0.06em; line-height: 1.5; margin-bottom: 28px;
+    font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
+    font-size: 44px; font-weight: 700; color: var(--rose-deep);
+    letter-spacing: 0.06em; line-height: 1.55; margin-bottom: 28px;
   }
   .hero h1 .line { display: block; }
   .hero h1 .line + .line { margin-top: 8px; }
   .hero h1 .connector {
-    font-size: 0.65em; color: var(--rose); font-weight: 400;
+    font-size: 0.6em; color: var(--rose); font-weight: 500;
     letter-spacing: 0.3em; margin: 8px 0;
   }
   .hero-sub {
-    font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
-    font-style: italic; font-size: 20px; color: var(--ink-soft);
-    letter-spacing: 0.05em;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 18px; color: var(--ink-soft);
+    letter-spacing: 0.15em;
   }
   .hero-divider {
     width: 50px; height: 1px; background: var(--rose);
@@ -73,11 +77,12 @@
   .scene p {
     font-size: 19px; line-height: 2.05; margin-bottom: 1.4em;
     color: var(--ink); text-align: justify; text-wrap: pretty;
+    font-weight: 500;
   }
   .scene p:last-child { margin-bottom: 0; }
   .scene p.opening {
-    font-size: 18px; color: var(--ink-soft); font-style: italic;
-    text-align: center; margin-bottom: 2em; letter-spacing: 0.03em;
+    font-size: 17px; color: var(--ink-soft); font-weight: 400;
+    text-align: center; margin-bottom: 2em; letter-spacing: 0.05em;
   }
 
   /* === ORNAMENT === */
@@ -98,13 +103,14 @@
 
   .bubble {
     background: var(--paper); border: 1px solid var(--petal);
-    padding: 24px 28px; border-radius: 12px;
+    padding: 24px 28px; border-radius: 8px;
     font-size: 18px; line-height: 1.95;
+    font-weight: 500;
     position: relative;
-    box-shadow: 0 4px 16px rgba(201, 135, 106, 0.1);
+    box-shadow: 0 3px 12px rgba(94, 74, 48, 0.08);
   }
   .bubble.child {
-    background: linear-gradient(135deg, var(--paper) 0%, #FBF2E5 100%);
+    background: linear-gradient(135deg, var(--paper) 0%, #EFE5CC 100%);
     border-color: var(--petal-warm);
   }
   .bubble.dad {
@@ -118,7 +124,7 @@
     transform: rotate(45deg); background: inherit;
     border-right: 1px solid; border-bottom: 1px solid; border-color: inherit;
   }
-  .dialogue.left .bubble::after { left: 32px; border-color: var(--petal-warm); background: #FBF2E5; }
+  .dialogue.left .bubble::after { left: 32px; border-color: var(--petal-warm); background: #EFE5CC; }
   .dialogue.right .bubble::after { right: 32px; border-color: var(--petal); background: var(--petal-soft); }
 
   /* === PULL QUOTE === */
@@ -133,15 +139,17 @@
   .pullquote::before { margin-bottom: 28px; }
   .pullquote::after { margin-top: 28px; }
   .pullquote .quote-text {
+    font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
     font-size: 28px; line-height: 1.7; color: var(--rose-deep);
-    font-weight: 500; letter-spacing: 0.06em;
+    font-weight: 700; letter-spacing: 0.06em;
   }
 
   /* === CALLOUT === */
   .callout {
+    font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
     text-align: center; margin: 48px 0;
-    font-size: 24px; line-height: 1.7; color: var(--rose-deep);
-    font-weight: 500; letter-spacing: 0.05em;
+    font-size: 26px; line-height: 1.7; color: var(--rose-deep);
+    font-weight: 700; letter-spacing: 0.05em;
   }
 
   /* === CONTRAST === */
@@ -165,13 +173,13 @@
     margin: 80px 0 60px; padding: 56px 48px 48px;
     background: var(--paper); border: 1px solid var(--petal);
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(201, 135, 106, 0.08), 0 16px 48px rgba(201, 135, 106, 0.1);
+    box-shadow: 0 2px 4px rgba(94, 74, 48, 0.06), 0 16px 48px rgba(94, 74, 48, 0.1);
     position: relative;
   }
   .letter-section::before {
     content: '致爸爸'; position: absolute; top: -12px; left: 50%;
     transform: translateX(-50%); background: var(--bg); color: var(--rose-deep);
-    font-size: 13px; letter-spacing: 0.4em; padding: 0 16px; font-weight: 500;
+    font-size: 13px; letter-spacing: 0.4em; padding: 0 16px; font-weight: 700;
   }
   .letter-section::after {
     content: ''; position: absolute; top: 24px; left: 24px; right: 24px; bottom: 24px;
@@ -180,10 +188,12 @@
   .letter-section p {
     font-size: 18px; line-height: 2.05; margin-bottom: 1.4em;
     text-align: justify; position: relative; z-index: 1;
+    font-weight: 500;
   }
   .letter-keyline {
+    font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif !important;
     text-align: center !important; font-size: 22px !important;
-    color: var(--rose-deep) !important; font-weight: 500;
+    color: var(--rose-deep) !important; font-weight: 700 !important;
     letter-spacing: 0.05em; margin: 24px 0 !important; line-height: 1.7 !important;
   }
 
@@ -191,8 +201,9 @@
   .finale { text-align: center; padding: 120px 28px 80px; }
   .finale-flower { width: 56px; margin: 0 auto 56px; display: block; opacity: 0.85; }
   .finale .closing-line {
-    font-size: 32px; line-height: 1.85; color: var(--rose-deep);
-    letter-spacing: 0.1em; font-weight: 500;
+    font-family: 'Zen Maru Gothic', 'Noto Sans TC', sans-serif;
+    font-size: 30px; line-height: 1.85; color: var(--rose-deep);
+    letter-spacing: 0.1em; font-weight: 700;
   }
   .finale .closing-line .second { display: block; margin-top: 1.6em; }
 
@@ -228,46 +239,24 @@
 
 <!-- ====== HERO ====== -->
 <section class="hero">
-  <!-- 向日葵 SVG（父親節常用花卉） -->
+  <!-- 山與樹 SVG（大地、沉穩、父親感） -->
   <svg class="hero-flower" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
-    <!-- 葉子 -->
-    <path d="M48 70 Q40 64 36 56" stroke="#A89968" stroke-width="2" fill="none" stroke-linecap="round"/>
-    <ellipse cx="36" cy="60" rx="10" ry="3.5" fill="#A89968" opacity="0.55" transform="rotate(-30 36 60)"/>
-    <!-- 花瓣 (向日葵 12 瓣) -->
-    <g transform="translate(48 36)">
-      <g opacity="0.92">
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" />
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(30)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(60)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(120)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(150)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(210)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(240)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(300)"/>
-        <ellipse cx="0" cy="-22" rx="5" ry="11" fill="#E8B870" transform="rotate(330)"/>
-      </g>
-      <!-- 花心 -->
-      <circle r="9" fill="#9E5F4A"/>
-      <circle r="9" fill="url(#center)" opacity="0.6"/>
-      <defs>
-        <radialGradient id="center">
-          <stop offset="0%" stop-color="#5C3F30"/>
-          <stop offset="100%" stop-color="#9E5F4A"/>
-        </radialGradient>
-      </defs>
-      <!-- 花心種子紋路 -->
-      <circle cx="0" cy="-3" r="0.8" fill="#3A2418"/>
-      <circle cx="3" cy="0" r="0.8" fill="#3A2418"/>
-      <circle cx="0" cy="3" r="0.8" fill="#3A2418"/>
-      <circle cx="-3" cy="0" r="0.8" fill="#3A2418"/>
-      <circle cx="2" cy="-2" r="0.8" fill="#3A2418"/>
-      <circle cx="-2" cy="2" r="0.8" fill="#3A2418"/>
+    <!-- 遠山輪廓 -->
+    <path d="M8 70 L28 48 L42 56 L58 38 L72 50 L88 70 Z" fill="#8B6F47" opacity="0.7"/>
+    <path d="M8 70 L20 60 L34 66 L48 54 L64 64 L88 70 Z" fill="#5C7560" opacity="0.55"/>
+    <!-- 一棵樹（中央偏右） -->
+    <g>
+      <path d="M62 70 L62 55" stroke="#3A2E2A" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="62" cy="48" r="9" fill="#5C7560" opacity="0.85"/>
+      <circle cx="58" cy="46" r="6" fill="#5C7560" opacity="0.85"/>
+      <circle cx="66" cy="46" r="6" fill="#5C7560" opacity="0.85"/>
+      <circle cx="62" cy="42" r="5" fill="#5C7560" opacity="0.85"/>
     </g>
-    <!-- 莖 -->
-    <path d="M48 50 L48 84" stroke="#A89968" stroke-width="2"/>
+    <!-- 太陽（左上角，隱約） -->
+    <circle cx="22" cy="26" r="6" fill="#D9C7A6" opacity="0.85"/>
+    <circle cx="22" cy="26" r="3.5" fill="#8B6F47" opacity="0.5"/>
+    <!-- 地平線 -->
+    <line x1="8" y1="70" x2="88" y2="70" stroke="#5E4A30" stroke-width="0.8" opacity="0.5"/>
   </svg>
   <div class="hero-meta">想 對 爸 爸 說</div>
   <h1>
@@ -458,26 +447,68 @@
 <!-- ====== 結尾（畫框外）====== -->
 <section class="finale">
   <svg class="finale-flower" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(32 28)" opacity="0.85">
-      <g>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(45)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(90)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(135)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(180)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(225)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(270)"/>
-        <ellipse cx="0" cy="-15" rx="3.5" ry="8" fill="#E8B870" transform="rotate(315)"/>
-      </g>
-      <circle r="6" fill="#9E5F4A"/>
+    <!-- 簡化版山與樹 -->
+    <path d="M8 50 L22 32 L32 38 L44 24 L56 50 Z" fill="#8B6F47" opacity="0.6"/>
+    <path d="M8 50 L18 42 L28 46 L40 38 L56 50 Z" fill="#5C7560" opacity="0.5"/>
+    <g>
+      <path d="M40 50 L40 38" stroke="#3A2E2A" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="40" cy="32" r="6" fill="#5C7560" opacity="0.85"/>
     </g>
-    <path d="M32 36 L32 56" stroke="#A89968" stroke-width="1.5"/>
+    <line x1="6" y1="50" x2="58" y2="50" stroke="#5E4A30" stroke-width="0.6" opacity="0.5"/>
   </svg>
   <p class="closing-line">
     沒事，是菸味的事，
     <span class="second">我們，都沒有錯。</span>
   </p>
 </section>
+
+<!-- ====== 免責聲明 ====== -->
+<section class="disclaimer">
+  <div class="disclaimer-inner">
+    <h3>關於這封信</h3>
+    <p>這封信是用 <a href="https://github.com/Jiang-Yude/prose-novel-layout" target="_blank">prose-novel-layout</a> 的「課題分離信件模式」寫的。</p>
+    <p><strong>這不是心理諮商工具</strong>，只是一個幫人把感受寫得更清楚的輔助。如果你也有類似的糾結，這個工具可以陪你走一遍——但真的有強烈心結，請找專業心理師。</p>
+    <p>信寫了不一定要寄。對方接不接受，是對方的課題；自己有沒有想清楚，是自己的課題。</p>
+    <p class="disclaimer-resource">需要專業協助：<a href="https://www.tsh.org.tw/" target="_blank">台灣自殺防治學會</a> ・ 張老師專線 1980 ・ 安心專線 1925</p>
+  </div>
+</section>
+
+<style>
+.disclaimer {
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  padding: 60px 28px 80px;
+  margin-top: 60px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.disclaimer-inner { max-width: 600px; margin: 0 auto; }
+.disclaimer h3 {
+  font-size: 14px; letter-spacing: 0.4em;
+  color: var(--rose-deep); margin-bottom: 28px;
+  text-align: center; font-weight: 700;
+}
+.disclaimer p {
+  font-size: 15px; line-height: 2;
+  color: var(--ink-soft); margin-bottom: 1em;
+  font-weight: 500;
+}
+.disclaimer p:last-child { margin-bottom: 0; }
+.disclaimer a {
+  color: var(--rose-deep);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.disclaimer .disclaimer-resource {
+  font-size: 13px; text-align: center;
+  margin-top: 24px; letter-spacing: 0.05em; opacity: 0.85;
+}
+@media (max-width: 640px) {
+  .disclaimer { padding: 40px 20px 60px; }
+  .disclaimer p { font-size: 14px; }
+  .disclaimer .disclaimer-resource { font-size: 12px; }
+}
+</style>
 
 </body>
 </html>
