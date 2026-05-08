@@ -4,7 +4,7 @@ version: v2.0
 license: MIT
 repo: https://github.com/Jiang-Yude/prose-novel-layout
 description: Chinese prose & novel web layout skill pack. Drop in a single article (essay, letter, memoir) or a multi-chapter novel; AI agent restructures it into editorial-typography HTML pages. Four core components — prose paragraphs, dialogue bubbles, pull quotes, letter sections — plus chapter system (cover, prev/next, TOC, progress) for serial fiction.
-trigger: 散文版型, 小說版型, 散文網頁, 小說網頁, 散文排版, 小說排版, 連載小說, 母親節網頁, 父親節網頁, 給媽媽的網頁, 給爸爸的網頁, 章回體, 寫信給, 文章排版, prose layout, novel layout
+trigger: 散文版型, 小說版型, 散文網頁, 小說網頁, 散文排版, 小說排版, 連載小說, 母親節網頁, 父親節網頁, 給媽媽的網頁, 給爸爸的網頁, 章回體, 寫信給, 文章排版, 課題分離, 想對父母說, 跟父母和解, 整理我的想法, 寫信給父母, 我糾結很久, prose layout, novel layout, task separation letter
 ---
 
 # Prose & Novel Web Layout · 小說、散文的網頁排版技能包 v2.0
@@ -99,6 +99,40 @@ my-novel/
 - **Series Hero** — 整本書的封面
 
 詳見 `references/02-chapter-system.md`。
+
+### Mode C · 課題分離信件（Task Separation Letter）
+
+跟 Mode A／B 不同——Mode C 是**引導工作流**，不只是排版。
+
+使用者帶著「跟某人的糾結」進來，AI 陪走三步：
+
+1. **整理想法** ・你說，我問（五個引導問題）
+2. **課題分離** ・拆「我的課題」vs「對方的課題」（阿德勒心理學）
+3. **整理成一封信，做成網頁** ・用四元件排版 + 必要的免責聲明
+
+適合：
+
+- 想對父母說但說不出口
+- 跟某人有未解的糾結（伴侶／朋友／同事）
+- 不期待對方理解，但想自己想清楚
+- 母親節／父親節想送孩子們一份「整理思緒」的禮物
+
+**核心理念**：
+
+> 寫信不是為了改變對方。<br>
+> 寫信是為了讓自己想清楚。<br>
+> 對方看不看、接不接受，是對方的課題。
+
+⚠️ **必須附上免責聲明**：這是輔助釐清工具，不是心理諮商。詳見 `references/06-disclaimer.md`。
+
+完整工作流見 `references/05-task-separation-letter.md`。
+
+兩個現成案例（都是用 Mode C 寫出來的）：
+
+- 🌸 〈喜歡煮麻辣火鍋的媽媽，跟一吃辣就拉肚子的孩子〉
+- 🌻 〈愛抽菸的爸爸，跟一聞菸味就想吐的孩子〉
+
+兩篇都來自江昱德 2026-05 的真實困境——學會尊重彼此、放過自己，再寫成信。
 
 ---
 
@@ -234,6 +268,8 @@ my-novel/
 | 連載系統（章節導航、TOC、進度條）| `references/02-chapter-system.md` |
 | 文章 → 排版的判斷邏輯 | `references/03-article-to-page.md` |
 | 部署到 Netlify / GitHub Pages / Vercel | `references/04-deploy-guide.md` |
+| **課題分離信件模式（引導工作流）** | `references/05-task-separation-letter.md` |
+| **免責聲明 HTML 模板（Mode C 必附）** | `references/06-disclaimer.md` |
 
 ---
 
